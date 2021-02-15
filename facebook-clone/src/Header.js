@@ -11,34 +11,34 @@ function Header() {
         <div className="header__input">
           <input placeholder="Search Doodle" type="text" />
           <button>
-            <span class="material-icons">search</span>
+            <span className="material-icons">search</span>
           </button>
         </div>
       </div>
       <div className="header__center">
         <div className="header__option header__option--active">
           <button>
-            <span class="material-icons">home</span>
+            <span className="material-icons">home</span>
           </button>
         </div>
         <div className="header__option">
           <button>
-            <span class="material-icons">flag</span>
+            <span className="material-icons">flag</span>
           </button>
         </div>
         <div className="header__option">
           <button>
-            <span class="material-icons">subscriptions</span>
+            <span className="material-icons">subscriptions</span>
           </button>
         </div>
         <div className="header__option">
           <button>
-            <span class="material-icons">storefront</span>
+            <span className="material-icons">storefront</span>
           </button>
         </div>
         <div className="header__option">
           <button>
-            <span class="material-icons">supervised_user_circle</span>
+            <span className="material-icons">supervised_user_circle</span>
           </button>
         </div>
       </div>
@@ -49,22 +49,22 @@ function Header() {
         </div>
         <div className="header__option">
           <button>
-            <span class="material-icons">add</span>
+            <span className="material-icons">add</span>
           </button>
         </div>
         <div className="header__option">
           <button>
-            <span class="material-icons">forum</span>
+            <span className="material-icons">forum</span>
           </button>
         </div>
         <div className="header__option">
           <button>
-            <span class="material-icons">notifications_active</span>
+            <span className="material-icons">notifications_active</span>
           </button>
         </div>
         <div className="header__option">
           <button>
-            <span class="material-icons">expand_more</span>
+            <span className="material-icons">expand_more</span>
           </button>
         </div>
       </div>
