@@ -1,6 +1,7 @@
 import React from "react";
 import "./Sidebar.css";
 import SidebarRow from "./SidebarRow";
+import { useStateValue } from "./StateProvider";
 
 import {
   LocalHospital,
@@ -13,12 +14,11 @@ import {
 } from "@material-ui/icons";
 
 function Sidebar() {
+  const [{ user }, dispatch] = useStateValue();
+
   return (
     <div className="sidebar">
-      <SidebarRow
-        src="https://avatars.githubusercontent.com/u/67956944?s=60&v=4"
-        title="Sean Shine"
-      />
+      <SidebarRow src={user.photoURL} title={user.displayName} />
       <SidebarRow Icon={LocalHospital} title="Covid-19 Information Center" />
       <SidebarRow Icon={EmojiFlags} title="Pages" />
       <SidebarRow Icon={People} title="Friends" />

@@ -2,8 +2,11 @@ import React from "react";
 import logo from "./logo-doodle.png";
 import { Avatar } from "@material-ui/core";
 import "./Header.css";
+import { useStateValue } from "./StateProvider";
 
 function Header() {
+  const [{ user }, dispatch] = useStateValue();
+
   return (
     <div className="header">
       <div className="header__left">
@@ -44,8 +47,8 @@ function Header() {
       </div>
       <div className="header__right">
         <div className="header__info">
-          <Avatar />
-          <h4>Sean Shine</h4>
+          <Avatar src={user.photoURL} />
+          <h4>{user.displayName}</h4>
         </div>
         <div className="header__option">
           <button>
